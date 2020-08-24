@@ -50,4 +50,10 @@ describe('RetiredForagerBee class functionality', function() {
     expect(retiredForager.treasureChest).to.have.length(2);
   });
 
+  it('should have a `wealth` method that allows the bee to stack up their riches  `honeyComb` to the `honey1k`', function() {
+    retiredForager.wealth(10000000);
+    expect(retiredForager.honey1k).to.equal(10000000);
+  });
+
+
 });

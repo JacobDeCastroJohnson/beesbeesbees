@@ -9,6 +9,9 @@ var RetiredForagerBee = function() {
   this.canFly = false;
   this.color = 'grey';
 
+  //New property
+  this.honey1k = 0;
+
   //Inherited properties
   //this.food = 'jelly';
   //this.eat method
@@ -31,5 +34,10 @@ RetiredForagerBee.prototype.forage = function () {
 //gamble method
 RetiredForagerBee.prototype.gamble = function (treasure) {
   this.treasureChest.push(treasure);
+};
+
+//Jacob Johnson personal method
+RetiredForagerBee.prototype.wealth= function (honeyComb) {
+ this.honey1k += honeyComb;
 };
 
